@@ -1,0 +1,69 @@
+#main{
+	overflow:hidden;
+	position:absolute;
+	margin-top:5%;
+	margin-left:15%;
+	width:900px;
+	height:550px;
+	background:url(../images/login.jpg);
+	
+}
+label{
+	color:#fff;
+	font-size:24px;
+	opacity:0.9;
+}
+span{
+	color:#fff;
+	font-size:24px;
+}
+.topic{
+	font-size:18px;
+}
+form{
+	overflow:hidden;
+	position:relative;
+	top:170px;
+	left:260px;
+	width:400px;
+	height:270px;
+	background:rgba(255,255,255,0.2);
+	zoom:1;
+	box-shadow:3px 3px #009ACD;
+	border-radius:5px;
+}
+#text{
+	position:relative;
+	top:50px;
+	left:70px;
+}
+#password{
+	position:absolute;
+	top:115px;
+	left:70px;
+}
+.text{
+	height:30px;
+	width:250px;
+	border:1px solid #fff;
+	border-radius:8px;
+	background:rgba(0,0,0,0);
+	color:#fff;
+}
+.text::-webkit-input-placeholder{
+	color:#fff;
+}
+.text::-moz-placeholder{
+	color:#fff;
+}
+.button {
+	position:relative;
+	width:170px;
+	height:35px;
+	top:155px;
+	left:100px;
+	align:center;
+	background:rgba(255,255,255,0.8);
+	border:1px solid #fff;
+	border-radius:10px;
+}

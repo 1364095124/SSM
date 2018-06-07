@@ -1,0 +1,43 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>文件上传</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="../js/jquery-2.0.3.min.js"></script>
+        <script src="../js/fileinput.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container kv-main">
+            
+            <br>
+            <form enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                </div>
+                
+            </form>
+        </div>
+    </body>
+	<script>
+  
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+   
+	</script>
+</html>
